@@ -2,11 +2,28 @@
 
 namespace Modul_3
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-			string MyName = "Jane";
+	internal class Program
+	{
+		static void Main(string[] args)
+		{
+
+		
+
+
+			//var name = "Jane";
+			Console.WriteLine("What is your name?");
+			var name = Console.ReadLine();
+
+			var age = checked((byte)int.Parse(Console.ReadLine()));
+			Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+
+			Console.Write("What is your favorite day of week? ");
+
+			var day = (DayOfWeek)int.Parse(Console.ReadLine());
+			Console.WriteLine("Your favorite day is {0}", day);
+
+
+			/*string MyName = "Jane";
 			byte MyAge = 27;
 			bool HaveIApet = true;
 			double MyShoeSize = 37.5;
@@ -17,7 +34,28 @@ namespace Modul_3
 			Console.WriteLine("My shoe size is " + MyShoeSize);
 			Console.WriteLine("\u0040");
 			Console.WriteLine("\u0023");
-			Console.ReadKey();
+
+
+			DaysOfWeek MyFavoriteDay;
+
+			MyFavoriteDay = DaysOfWeek.Friday;
+
+			Console.WriteLine(MyFavoriteDay);
+			Console.ReadKey();*/
+
+			//Console.WriteLine("\tПривет,\n мир!");
+			//Console.ReadKey();
+
+			//int counter = 10;
+			//Console.WriteLine("Value : {0} Increment: {1}", counter, counter++);
+		} 
+			enum DaysOfWeek : byte
+		{
+			Tuesday,
+			Monday,
+			Wednesday,
+			Friday
 		}
+	}
     }
-}
+
