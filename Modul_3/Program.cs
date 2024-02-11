@@ -7,9 +7,37 @@ namespace Modul_3
 		static void Main(string[] args)
 		{
 
-		
+			Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
+
+			var color = Console.ReadLine();
+
+			switch (color)
+			{
+				case "red":
+					Console.BackgroundColor = ConsoleColor.Red;
+					Console.ForegroundColor = ConsoleColor.Black;
+
+					Console.WriteLine("Your color is red!");
+					break;
+
+				case "green":
+					Console.BackgroundColor = ConsoleColor.Green;
+					Console.ForegroundColor = ConsoleColor.Black;
+
+					Console.WriteLine("Your color is green!");
+					break;
+
+				default:
+					Console.BackgroundColor = ConsoleColor.Cyan;
+					Console.ForegroundColor = ConsoleColor.Black;
+
+					Console.WriteLine("Your color is cyan!");
+					break;
+			}
 
 
+
+			/*
 			//var name = "Jane";
 			Console.WriteLine("What is your name?");
 			var name = Console.ReadLine();
@@ -47,15 +75,15 @@ namespace Modul_3
 			//Console.ReadKey();
 
 			//int counter = 10;
-			//Console.WriteLine("Value : {0} Increment: {1}", counter, counter++);
+			//Console.WriteLine("Value : {0} Increment: {1}", counter, counter++);*//
 		} 
-			enum DaysOfWeek : byte
-		{
-			Tuesday,
-			Monday,
-			Wednesday,
-			Friday
-		}
+			//enum DaysOfWeek : byte
+		//{
+			//Tuesday,
+			//Monday,
+			//Wednesday,
+			//Friday
+		//}
 	}
     }
 
